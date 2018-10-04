@@ -5,8 +5,9 @@
     <title>Help me choose</title>
     <link href="./main.css" rel="stylesheet" type="text/css">
   </head>
+  <body>
     <h1>Help me choose...</h1>
-    <a href="http://www.tjejerkodar.se/" target="_blank"><img style="border:2px solid black" src="assest/images/ingrid-thinking.png" alt="Ingrid funderar på vad hon ska välja" width="320"></a>
+    <a href="http://www.tjejerkodar.se/" target="_blank"><img class="myImages" src="assest/images/ingrid-thinking.png" alt="Ingrid funderar på vad hon ska välja" width="320"></a>
     <h1>...between:</h1>
     <div class="inputSection">
       <div class="inputs">
@@ -14,6 +15,30 @@
       </div>
       <button class="addOption">Add</button>
       </div>
+      <div class="resultSection"></div>
       <button class="goBig">Don´t hesitate - Go for it!</button>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <!--länken ovan finns att hämta i jquery.com/download, i stycket: Downloading jQuery using Bower-->
+
+      <script>
+      $(function() {
+        $('.resultSection').hide()
+        /* .hide är en funktion som finns i jQuery, den gömmer .resultSection (de tillagda valen genom Add-knappen)
+        så fort sidan laddas, så jag inte ser direction förrän jag vill **/
+        var add_option = function() {
+          $('.inputs').append('<input></input>')
+          /* jag har gjort en funktion som hittar och kan lägga till ett input-elements till vår inputs-block
+          och kopplar funktionen till min Add-knapp. Varje gång jag klickar får jag ett nytt inputs-fält.
+          Ladda ned .append här: https://api.jquery.com/append/#append-content-content **/
+          }
+
+          $('.addOption').click(add_option)
+          /* här är ett event (click) tillagt, är vad som musen gör; hover, action osv
+          vilket betyder när du klickar på addOption (Add-knappen), då körs add_option-funktionen
+          **/
+
+        })
+      </script>
     </body>
 </html>
