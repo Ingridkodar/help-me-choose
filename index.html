@@ -38,10 +38,26 @@
           vilket betyder när du klickar på addOption (Add-knappen), då körs add_option-funktionen
           **/
 
+          var options = []
+          var goBig = function() {
+            $('.inputSection').hide()
+            $('.resultSection').css('display', 'flex')
+            $('input').each(function() {
+              options.push($(this).val())
+            })
+            var winner = options[Math.floor(Math.random() * options.length)]
+            console.log(winner)
+            $('.resultSection').text(winner)
+          }
+          $('.goBig').click(goBig)
         })
-          $(".header").click(function() {
-            $("body").toggleClass("changeColor");
-        });
+      </script>
+
+      <script>
+      $('.header').click(function() {
+        $('body').toggleClass("changeColor");
+    });
+
       </script>
 
     </body>

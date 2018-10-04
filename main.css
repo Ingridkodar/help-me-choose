@@ -63,5 +63,15 @@ h1 {
 }
 
 .changeColor {
-background-color:black;
+background-color: black;
+}
+.resultSection {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 75px;
+  font-family: sans-serif;
+  color: hotpink;
+  font-weight: bolder;
 }
