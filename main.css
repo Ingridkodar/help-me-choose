@@ -15,11 +15,10 @@ h1 {
   font-family: sans-serif;
   color: green;
   font-weight: lighter;
-  font-size: 34px;
+  font-size: 37px;
   letter-spacing: 1px;
   margin-bottom: 15px;
   margin-top: 7px;
-  cursor: pointer;
 }
 
 .inputSection {
@@ -31,7 +30,6 @@ h1 {
   width: inherit;
   display: flex;
   flex-direction: column;
-
 }
 
   input {
@@ -40,7 +38,6 @@ h1 {
   padding: 0px 7px;
   border: 0px;
   border-radius: 5px;
-
 }
 
 .addOption {
@@ -49,7 +46,6 @@ h1 {
   background-color: #eaeca6;
   border-radius: 5px;
   font-weight: bold;
-  cursor: pointer;
 }
 
 .goBig {
@@ -59,9 +55,4 @@ h1 {
   background-color: pink;
   font-size: 15px;
   font-weight: bold;
-  cursor: pointer;
-}
-
-.changeColor {
-background-color:black;
 }
