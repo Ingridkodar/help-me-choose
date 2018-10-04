@@ -7,10 +7,6 @@ body {
   background-color: #ccc;
 }
 
-.myImages {
-  border: 2px solid black;
-}
-
 h1 {
   font-family: sans-serif;
   color: green;
@@ -32,7 +28,11 @@ h1 {
   flex-direction: column;
 }
 
-  input {
+img src{
+  border: 5px;
+}
+
+input {
   margin-top: 10px;
   height: 25px;
   padding: 0px 7px;
