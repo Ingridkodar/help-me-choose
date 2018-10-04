@@ -6,17 +6,17 @@
     <link href="./main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1>Help me choose...</h1>
+    <h1 class="header">Hjälp mig att välja...</h1>
     <a href="http://www.tjejerkodar.se/" target="_blank"><img class="myImages" src="assest/images/ingrid-thinking.png" alt="Ingrid funderar på vad hon ska välja" width="320"></a>
-    <h1>...between:</h1>
+    <h1 class="header">...mellan:</h1>
     <div class="inputSection">
       <div class="inputs">
-        <input placeholder="Something"></input>
+        <input placeholder="Skriv förslag här..."></input>
       </div>
-      <button class="addOption">Add</button>
+      <button class="addOption">Lägg fler förslag</button>
       </div>
       <div class="resultSection"></div>
-      <button class="goBig">Don´t hesitate - Go for it!</button>
+      <button class="goBig">Klart - kör så det ryker!</button>
 
       <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
       <!--länken ovan finns att hämta i jquery.com/download, i stycket: Downloading jQuery using Bower-->
@@ -39,6 +39,10 @@
           **/
 
         })
+          $(".header").click(function() {
+            $("body").toggleClass("changeColor");
+        });
       </script>
+
     </body>
 </html>
