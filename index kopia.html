@@ -6,9 +6,9 @@
     <link href="./main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1 class="header1">Jag hjälper dig att välja...</h1>
+    <h1 class="header">Jag hjälper dig att välja...</h1>
     <a href="http://www.tjejerkodar.se/" target="_blank"><img class="myImages" src="assest/images/ingrid-thinking.png" alt="Ingrid funderar på vad hon ska välja" width="320"></a>
-    <h1 class="header2">...din drömdate:</h1>
+    <h1 class="header">...din drömdate:</h1>
     <div class="inputSection">
       <div class="inputs">
         <input placeholder="Skriv förslag på godingarna här..."></input>
@@ -16,7 +16,7 @@
       <button class="addOption">Lägg till fler förslag</button>
       </div>
       <div class="resultSection"></div>
-      <button class="goBig">Redo att se vem? Kör så det ryker!</button>
+      <button class="goBig">Klart - kör så det ryker!</button>
 
       <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
       <!--länken ovan finns att hämta i jquery.com/download, i stycket: Downloading jQuery using Bower-->
@@ -41,10 +41,6 @@
           var options = []
           var goBig = function() {
             $('.inputSection').hide()
-            $('.myImages').replaceWith('<img src="assest/images/BlomRid-kurs.png" width="320" class="myImageTwo">')
-            $('.header1').text('Hm, himla fina godingar...')
-            $('.header2').text('...och din drömdate är:')
-            $('.goBig').text('Inte nöjd...? Försök igen!')
             $('.resultSection').css('display', 'flex')
             $('input').each(function() {
               options.push($(this).val())
@@ -58,12 +54,9 @@
       </script>
 
       <script>
-      $('.header1').click(function() {
+      $('.header').click(function() {
         $('body').toggleClass("changeColor");
-            });
-            $('.header2').click(function() {
-              $('body').toggleClass("changeColor");
-                  });
+    });
 
       </script>
 
